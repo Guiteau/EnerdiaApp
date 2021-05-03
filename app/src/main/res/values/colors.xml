@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ESTO DE AQUÍ ES PARA EL GRADIENTE -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorTransparents">#00ffffff</color>
+
+    <color name="colorGradientStart">#FFF59F</color>
+    <color name="colorGradientCenter1">#FFD600</color>
+    <color name="colorGradientCenter2">#FF8058</color>
+    <color name="colorGradientEnd">#FF5959</color>
+
+    <!--   LLEGA HASTA AQUÍ EL GRADIENTE  -->
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!-- aquí definimos los colores que se usarán y sus nombres asociados a un código de color html -->
+
+    <color name="green_dark">#062925</color>
+    <color name="green_normal">#044a42</color>
+    <color name="green_light">#3a9188</color>
+    <color name="green_light_2">#b8e1dd</color>
+
+</resources>

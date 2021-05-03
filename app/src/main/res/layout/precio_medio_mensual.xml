@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.enerdia.charts.PrecioMedioMensual"><![CDATA[
+
+    ;
+        app:layout_constraintBottom_toTopOf="@+id/lineChart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    ]]>
+
+    <TextView
+        android:id="@+id/textView_fin2"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="INICIO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_fin"
+        android:layout_width="84dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="FIN"
+        app:layout_constraintBottom_toTopOf="@+id/lineChart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fin2"
+        app:layout_constraintVertical_bias="0.368" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="384dp"
+        android:layout_height="517dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <Spinner
+        android:id="@+id/spinner_upper_month"
+        android:layout_width="116dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_bottom_month"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_upper_year"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_fin2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner_upper_year"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_bottom_year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <Spinner
+        android:id="@+id/spinner_bottom_month"
+        android:layout_width="116dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/lineChart"
+        app:layout_constraintStart_toEndOf="@+id/textView_fin" />
+
+    <Spinner
+        android:id="@+id/spinner_bottom_year"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/lineChart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/spinner_bottom_month" />
+
+    <TextView
+        android:id="@+id/textView_showBottomResult"
+        android:layout_width="273dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="16dp"
+        android:text="PRECIO MEDIO MENSUAL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineChart"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

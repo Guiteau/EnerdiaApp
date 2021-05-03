@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.enerdia.charts.GeneracionDemandaRealTotalGeneracion"><![CDATA[
+
+    ;
+        app:layout_constraintBottom_toTopOf="@+id/lineChart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    ]]>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="384dp"
+        android:layout_height="517dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <TextView
+        android:id="@+id/textView_showBottomResult"
+        android:layout_width="273dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="16dp"
+        android:text="DEMANDA REAL TOTAL GENERACIÓN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineChart" />
+
+    <Spinner
+        android:id="@+id/spinner_minuto_inicio"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toEndOf="@+id/spinner_hora_inicio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_fecha_inicio"
+        android:layout_width="86dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Fecha Inicio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_fecha_fin"
+        android:layout_width="86dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:text="Fecha Fin"
+        app:layout_constraintBottom_toTopOf="@+id/lineChart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_fecha_inicio"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <EditText
+        android:id="@+id/editTextDate_inicio"
+        android:layout_width="97dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/button_fecha_inicio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDate_fin"
+        android:layout_width="97dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/lineChart"
+        app:layout_constraintStart_toEndOf="@+id/button_fecha_fin"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate_inicio" />
+
+    <Spinner
+        android:id="@+id/spinner_hora_inicio"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate_inicio"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_minuto_fin"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/lineChart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toEndOf="@+id/spinner_hora_fin"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_minuto_inicio"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Spinner
+        android:id="@+id/spinner_hora_fin"
+        android:layout_width="82dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/lineChart"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate_fin"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_hora_inicio"
+        app:layout_constraintVertical_bias="0.833" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

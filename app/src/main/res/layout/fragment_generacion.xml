@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/generacion_fragment_xml"
+    android:background="@drawable/gradient_animation"
+    tools:context="com.enerdia.main.GeneracionFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:text="Generación y demanda"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_demanda_real"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="140dp"
+        android:drawableTop="@drawable/ic_demanda_real_foreground"
+        android:text="Demanda\n Real"
+        android:background="@color/colorTransparents"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_demanda_real_total_generacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/colorTransparents"
+        android:drawableTop="@drawable/ic_demanda_real_total_generacion_foreground"
+        android:text="Demanda\n Real y Total\n Generación"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button_demanda_real"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_generacion_no_renovable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="128dp"
+        android:background="@color/colorTransparents"
+        android:drawableTop="@drawable/ic_generacion_no_renovables_foreground"
+        android:text="G. Tiempo\n Real No\n Renovables"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_demanda_real"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <Button
+        android:id="@+id/button_generacion_renovable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:background="@color/colorTransparents"
+        android:drawableTop="@drawable/ic_generacion_renovables_foreground"
+        android:text="Generación\n Tiempo Real\n Renovables"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toEndOf="@+id/button_generacion_no_renovable"
+        app:layout_constraintTop_toBottomOf="@+id/button_demanda_real_total_generacion"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

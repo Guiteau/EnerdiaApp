@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/precio_fragment_xml"
+    android:background="@drawable/gradient_animation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.enerdia.main.PrecioFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:text="Precio de la energía"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_precio_medio_anual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:background="@color/colorTransparents"
+        android:layout_marginTop="140dp"
+        android:drawableTop="@drawable/ic_precio_medio_anual_foreground"
+        android:text="Precio Medio\n Anual"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_precio_medio_contratacion_libre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/colorTransparents"
+        android:drawableTop="@drawable/ic_precio_anual_contratacion_libre_foreground"
+        android:text="Precio M. A.\n Contración\n Libre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button_precio_medio_anual"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_precio_medio_mensual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="128dp"
+        android:background="@color/colorTransparents"
+        android:drawableTop="@drawable/ic_precio_mensual_foreground"
+        android:text="Precio Medio\n Mensual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_precio_medio_anual"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <Button
+        android:id="@+id/button_precio_medio_diario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:drawableTop="@drawable/ic_precio_diario_foreground"
+        android:background="@color/colorTransparents"
+        android:text="Precio Medio\n Diario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toEndOf="@+id/button_precio_medio_mensual"
+        app:layout_constraintTop_toBottomOf="@+id/button_precio_medio_contratacion_libre"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
